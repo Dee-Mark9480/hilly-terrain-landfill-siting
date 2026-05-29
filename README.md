@@ -6,11 +6,18 @@ This project develops a **Land Suitability Index (LSI)** for urban/infrastructur
 
 ## 📂 Dataset Access
 
-All raw `.tif` raster files, the Shimla boundary shapefile, and intermediate processed files are available on Google Drive:
+Due to the large size of processed raster layers and intermediate files, the full dataset cannot be hosted on Google Drive. The `.tif` raster files and `.parquet` files are generated through the manual download and QGIS preprocessing steps described in the sections below.
 
-🔗 **[Click here to access the full dataset](https://drive.google.com/drive/folders/1theDKxtPCSQZqcPRpBd0pyjVrZKxUyrF?usp=sharing)**
+The Drive link below contains only the files that are **not easily available on the internet** and would otherwise require significant effort to obtain or prepare:
 
-The Drive contains the raw GeoTIFF layers, LSI outputs, and intermediate `.parquet` files used across the notebooks.
+- `shimla_boundary_utm.shp` — Shimla Municipal Corporation boundary (reprojected to UTM 43N)
+- Land value / property rate spatial data (collected and cleaned from listing sources)
+
+🔗 **[Access supplementary files on Google Drive](https://drive.google.com/drive/folders/1theDKxtPCSQZqcPRpBd0pyjVrZKxUyrF?usp=sharing)**
+
+All remaining layers (elevation, slope, LULC, roads, railways, LST, landslide inventory, lineaments) must be downloaded manually from the sources listed in the Data Collection table and preprocessed in QGIS as described in Section 2. For full methodological details, refer to the research paper:
+
+> **[Land Suitability Index for Urban Development — ScienceDirect](https://www.sciencedirect.com/science/article/pii/S2949750725000100)**
 
 ---
 
